@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+		<ion-item-sliding *ngFor="let item of items" (click)="itemSelected(item)">
+		  <button ion-item>
+		    {{ item.titulo }}
+		  </button>
+		  <ion-item-options side="right">
+	      <button ion-button color="primary">
+	        <ion-icon name="text"></ion-icon>
+	        Comentários
+	      </button>
+	      <button ion-button color="secondary">
+	        <ion-icon name="call"></ion-icon>
+	        Telefone
+	      </button>
+    	  </ion-item-options>
+	    </ion-item-sliding> 
+	</ion-list>
+</ion-content>
